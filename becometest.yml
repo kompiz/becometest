@@ -1,0 +1,13 @@
+---
+- name: Testing become
+  hosts: localhost
+  connection: local
+  tasks:
+
+  - name: Print var1
+    debug:
+      msg: '"{{ vault_var1 }}" var1 was read from vaulted inventory/group_vars/local file!'
+
+  - name: Echo sudo works
+    shell: "echo Shell successfully became $(whoami)"
+    become: yes
