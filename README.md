@@ -5,6 +5,6 @@ I have troube on MacOS to get ```ansible_become_password``` working - interestin
 To use it, you need the vars file ```inventory/group_vars/local``` and it should look something like this:
 ```
 ---
-vault_ansible_become_password: <password>
+vault_ansible_become_pass: <password>
 vault_var1: Success!
 ```
